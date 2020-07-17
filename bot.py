@@ -271,4 +271,5 @@ async def help(ctx):
         emb.add_field( name = '{}'.format('clear'), value = 'Команда клира Доступ А.С.М' )
 
         await ctx.send(embed = emb)
-Bot.run ('NzA4MzU5NDk2MjIwNTQxMTgw.XuNi5A.hIgZf3BAJtI5Oldcdnv4arl4LoQ')
+token = os.environ.get('BOT_TOKEN')
+Bot.run(str(token))
