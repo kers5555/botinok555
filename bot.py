@@ -10,6 +10,7 @@ import thanks
 import clear
 import typing
 import pymongo
+import os
 import datetime
 from googletrans import Translator
 connection = sqlite3.connect('server.dbrepp') #add *.db file #repp
