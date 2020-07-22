@@ -275,6 +275,7 @@ async def help(ctx):
 async def help2(ctx):
 	emb = discord.Embed( title = 'Команды ботинка №2' )
 	emb.add_field( name = '{}'.format('ping'), value = 'Команда проверки пинга бота' )
+	await ctx.send(embed = emb)
 	
 @Bot.command()
 async def ping(ctx):
