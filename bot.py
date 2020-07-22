@@ -270,6 +270,7 @@ async def help(ctx):
         emb.add_field( name = '{}'.format('kick'), value = 'Команда кика Доступ A.С.М' )
         emb.add_field( name = '{}'.format('avatar'), value = 'Команда аватарки' )
         emb.add_field( name = '{}'.format('clear'), value = 'Команда клира Доступ А.С.М' )
+	await ctx.send(embed = emb)
 	emb.add_field( name = '{}'.format('ping'), value = 'Команда проверки пинга бота' )
 
         await ctx.send(embed = emb)
