@@ -270,8 +270,12 @@ async def help(ctx):
         emb.add_field( name = '{}'.format('kick'), value = 'Команда кика Доступ A.С.М' )
         emb.add_field( name = '{}'.format('avatar'), value = 'Команда аватарки' )
         emb.add_field( name = '{}'.format('clear'), value = 'Команда клира Доступ А.С.М' )
-	emb.add_field( name = '{}'.format('ping'), value = 'Команда проверки пинга бота' )
         await ctx.send(embed = emb)
+@Bot.command( pass_context = True )
+async def help2(ctx):
+	emb = discord.Embed( title = 'Команды ботинка №2' )
+	emb.add_field( name = '{}'.format('ping'), value = 'Команда проверки пинга бота' )
+	
 @Bot.command()
 async def ping(ctx):
     await ctx.channel.purge(limit = 1)
