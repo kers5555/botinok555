@@ -272,5 +272,13 @@ async def help(ctx):
         emb.add_field( name = '{}'.format('clear'), value = 'Команда клира Доступ А.С.М' )
 
         await ctx.send(embed = emb)
+@Bot.command()
+async def ping(ctx):
+    await ctx.channel.purge(limit = 1)
+
+    await ctx.send(embed = discord.Embed(
+        title = 'Задержка бота',
+        description = f'**{bot.ws.latency * 1000:.0f} мс**'
+    ))
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
