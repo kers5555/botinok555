@@ -278,7 +278,7 @@ async def ping(ctx):
 
     await ctx.send(embed = discord.Embed(
         title = 'Задержка бота',
-        description = f'**{bot.ws.latency * 1000:.0f} мс**'
+        description = f'**{Bot.ws.latency * 1000:.0f} мс**'
     ))
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
