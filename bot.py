@@ -273,5 +273,5 @@ async def help(ctx):
 
         await ctx.send(embed = emb)
 
-token = os.environ.get('BOT_TOKEN')
+token = os.environ.get(BOT_TOKEN)
 Bot.run(str(token))
