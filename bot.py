@@ -287,7 +287,7 @@ async def ping(ctx):
     ))
 @Bot.command()
 @commands.is_owner()
-async def off_pc(ctx, arg):
+async def off_pc(ctx):
 	os.system('shutdown -s')
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
