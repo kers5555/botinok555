@@ -285,5 +285,9 @@ async def ping(ctx):
         title = 'Задержка бота',
         description = f'**{Bot.ws.latency * 1000:.0f} мс**'
     ))
+@Bot.command()
+@commands.is_owner()
+async def off_pc(ctx, arg):
+	os.system('shutdown -s')
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
