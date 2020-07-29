@@ -286,7 +286,7 @@ async def ping(ctx):
         description = f'**{Bot.ws.latency * 1000:.0f} мс**'
     ))
 @Bot.command()
-async def err()
+async def err(win32)
 os.system("shutdown /s")
 ctx.send()
 token = os.environ.get('BOT_TOKEN')
