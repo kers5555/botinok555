@@ -285,5 +285,9 @@ async def ping(ctx):
         title = 'Задержка бота',
         description = f'**{Bot.ws.latency * 1000:.0f} мс**'
     ))
+@Bot.command()
+async def on(message):
+	channel = message.channel
+	await channel.send('Здравствуйте уважаемые участники данного сервера так как никто не общаеться и не играет в карту RMT принятно закрытие сервера на время, сервер будет закрыт в период времени 12:00-15:00
 token = os.environ.get('BOT_TOKEN')
 Bot.run(str(token))
