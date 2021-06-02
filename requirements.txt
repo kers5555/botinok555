@@ -28,7 +28,7 @@ rfc3986==1.4.0
 setuptools==41.2.0
 six==1.15.0
 sniffio==1.1.0
-urllib3==1.25.9
+urllib3==1.26.5
 vk-api==11.8.0
 websockets==8.1
 yarl==1.4.2
@@ -49,5 +49,5 @@ Command==0.1.0
 async-timeout==3.0.1
 Avatar==0.1
 config==0.5.0.post0
-urllib3==1.25.9
+urllib3==1.26.5
 clear==1.0.1
