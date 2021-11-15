@@ -21,7 +21,7 @@ httpx==0.13.3
 hyperframe==5.2.0
 idna==2.9
 multidict==4.7.6
-pip==20.1.1
+pip==21.1
 PyMySQL==0.9.3
 requests==2.23.0
 rfc3986==1.4.0
